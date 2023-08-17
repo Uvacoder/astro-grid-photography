@@ -1,0 +1,77 @@
+<section class="mb-5 mt-10">
+  <div id="aboutcontent">
+    <div id="title">
+      <h1
+        id="about"
+        class="revealscroll font-Comic font-bold text-3xl mt-5 mb-5 text-center"
+      >
+        About Me
+      </h1>
+    </div>
+    <div id="profile">
+      <img class="revealscroll" src="/images/Profile.jpg" />
+    </div>
+    <div id="description">
+      <p class="revealscroll font-AzeretMono text-sm font-semibold">
+        Hi, I'm Zena, a portrait photographer in Nairobi, Kenya. I specialize in
+        capturing the essence of people through photography, drawing inspiration
+        from the unique landscapes and cultures around me. My approach is both
+        professional and personal, using top-of-the-line equipment and
+        techniques to create relaxed and enjoyable shoots. I work closely with
+        my clients to understand their vision and create images that showcase
+        their personality and spirit. If you're looking for a portrait
+        photographer, let's work together to create images that you'll cherish
+        for years to come.
+      </p>
+      <div
+        id="creatortag"
+        class="font-AzeretMono font-semibold text-md text-center mt-10 mb-20"
+        data-test="footer-text"
+      >
+        &copy;<script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script> Made with 💙 by Klevert
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #aboutcontent {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto auto;
+    margin: 0 auto;
+    padding: 0%;
+    overflow: hidden;
+    gap: 20px;
+  }
+  #title {
+    grid-column: 1/10;
+    grid-row: 1/2;
+    margin: 0% auto;
+    padding: 0%;
+  }
+  #profile {
+    grid-column: 3/6;
+    grid-row: 2/3;
+    margin: 0% auto;
+    padding: 0%;
+  }
+  #description {
+    grid-column: 6/8;
+    grid-row: 2/3;
+    margin: 0% auto;
+    padding: 0%;
+  }
+  @media (max-width: 1000px) {
+    #aboutcontent {
+      display: block;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    #profile {
+      margin-bottom: 20px;
+    }
+  }
+</style>

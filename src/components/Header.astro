@@ -1,0 +1,36 @@
+---
+import Progressbar from "./Progressbar.astro";
+---
+
+<header>
+  <div id="headcontent" class="flex justify-between px-4 py-2">
+    <div id="nametag">
+      <h1 class="name font-Comic text-2xl md:text-4xl font-extrabold opacity-0">
+        <a href="/">zena</a>
+      </h1>
+      <p class="tag font-AzeretMono font-semibold text-sm opacity-0">
+        Portrait||Photographer
+      </p>
+    </div>
+    <div id="navigationtop">
+      <ul class="nav font-AzeretMono font-semibold text-base opacity-0">
+        <li><a href="#about">About</a></li>
+        <li><a href="">Featured</a></li>
+      </ul>
+    </div>
+  </div>
+  <Progressbar />
+</header>
+
+<style>
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #eaf9b1;
+    box-shadow: 5px 0 6px 0 rgb(32 33 36 / 10%);
+    z-index: 9999;
+  }
+</style>
